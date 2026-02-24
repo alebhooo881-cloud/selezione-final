@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Sito Interattivo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sito Interattivo in Tempo Reale</h1>
+
+<div id="home">
+  <button onclick="mostraSezione('a')">Sezione A</button>
+  <button onclick="mostraSezione('b')">Sezione B</button>
+</div>
+
+<div id="a" class="sezione">
+  <h2>Sezione A</h2>
+  <p>Vota le opzioni qui:</p>
+  <button onclick="vota('opzione1')">Opzione 1</button>
+  <button onclick="vota('opzione2')">Opzione 2</button>
+  <div id="votiA"></div>
+  <button onclick="mostraSezione('home')">Torna Home</button>
+</div>
+
+<div id="b" class="sezione">
+  <h2>Sezione B</h2>
+  <p>Vota le opzioni qui:</p>
+  <button onclick="vota('opzione3')">Opzione 3</button>
+  <button onclick="vota('opzione4')">Opzione 4</button>
+  <div id="votiB"></div>
+  <button onclick="mostraSezione('home')">Torna Home</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
